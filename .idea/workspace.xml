@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b4a7c06f-f4e4-4ec9-b266-9964883b6e26" name="Default" comment="" />
+    <list default="true" id="b4a7c06f-f4e4-4ec9-b266-9964883b6e26" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile/admins/includes/jpush/vendor/monolog/monolog" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/admins/includes/jpush/vendor/monolog/monolog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile/admins/includes/jpush/vendor/nategood/httpful" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/admins/includes/jpush/vendor/nategood/httpful" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile/admins/includes/jpush/vendor/psr/log" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/admins/includes/jpush/vendor/psr/log" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -64,8 +69,8 @@
       <file leaf-file-name="users_list.htm" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/admins/templates/users_list.htm">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="130" column="41" selection-start-line="130" selection-start-column="41" selection-end-line="130" selection-end-column="41" />
+            <state relative-caret-position="525">
+              <caret line="135" column="17" selection-start-line="135" selection-start-column="17" selection-end-line="135" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -117,6 +122,7 @@
   </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="AUTO_COMMIT_ON_CHERRY_PICK" value="true" />
   </component>
   <component name="HighlightingSettingsPerFile">
@@ -155,12 +161,13 @@
   <component name="PhpServers">
     <servers />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -227,12 +234,12 @@
       <updated>1552875625132</updated>
       <workItem from="1552875626479" duration="17281000" />
       <workItem from="1552958217542" duration="611000" />
-      <workItem from="1553134307953" duration="4101000" />
+      <workItem from="1553134307953" duration="5188000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21993000" />
+    <option name="totallyTimeSpent" value="23080000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -245,13 +252,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3297062" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.3297062" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3297062" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.33006537" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2553305" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
@@ -748,8 +756,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/admins/templates/users_list.htm">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="130" column="41" selection-start-line="130" selection-start-column="41" selection-end-line="130" selection-end-column="41" />
+        <state relative-caret-position="525">
+          <caret line="135" column="17" selection-start-line="135" selection-start-column="17" selection-end-line="135" selection-end-column="17" />
         </state>
       </provider>
     </entry>
