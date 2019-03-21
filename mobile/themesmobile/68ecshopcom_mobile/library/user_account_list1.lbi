@@ -1,0 +1,59 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!---------账户明细----------->
+<!--{if $action eq "account_raply" || $action eq "account_log" || $action eq "account_deposit" || $action eq "account_detail"} -->
+<script type="text/javascript">
+	{foreach from=$lang.account_js item=item key=key}
+		var {$key} = "{$item}";
+	{/foreach}
+</script>
+<!-- {/if}--> 
+
+<div class="user_login_title"><h2><em>账户股份：</em><span>{$surplus_amount}</span>个</h2></div>
+<!--{if $account_log}-->
+<!-- {if $action eq "account_detail1"} -->
+<div style=" background:#FFF">
+<div class="Fund">
+  <ul>
+  <!--{foreach from=$account_log item=item name=name}-->
+    <li class="Funds_li" {if $smarty.foreach.name.last} style=" border:0"{/if}>
+    	<span class="icon<!--{if $smarty.foreach.name.first}--> on<!--{/if}-->"></span>
+        <span>股份数量：<em>{$item.gufennum}</em></span>
+        <span>充值金额：<em>{$item.amount}</em></span>
+        <span>支付方式：<em>{$item.payment}</em></span>
+        <span>股份期限：<em>{$item.shijian}</em></span>
+        <span>起始时间：{$item.change_time}<span style="float:right">结束时间：{$item.end_time}</span></span>
+        <span>{$item.short_change_desc}</span>
+    </li>
+  <!--{/foreach}-->
+  </ul>
+</div>
+</div>
+<!-- {/if} -->
+{else}
+  <div class="dotm_no">
+  <dl>
+    <dd>您没有任何股份申请的变动哦！</dd>
+  </dl>
+</div>
+
+<!-- {/if} -->
+
+
+
+
+
+<!---返回顶部-->
+<script>
+function goTop(){
+	$('html,body').animate({'scrollTop':0},600);
+}
+</script>
+<a href="javascript:goTop();" class="gotop"><img src="themesmobile/68ecshopcom_mobile/images/topup.png"></a> 
+<script type="text/javascript">
+{foreach from=$lang.account_js item=item key=key}
+var {$key} = "{$item}";
+{/foreach}
+</script>
+
+
+

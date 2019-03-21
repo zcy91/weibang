@@ -1,0 +1,105 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style>
+ .utitle2{
+ height: 60px;
+     line-height: 60px;
+     font-size: 18px;
+     font-family: 微软雅黑;
+     background: #ffffff;
+     color: #666;
+     margin: 0px 0px 0px;
+     text-align: center;
+     position: relative;
+     margin-top: 15px;
+     border-bottom: #eee 1px solid;
+ }
+ .utitle2 i {
+     position: absolute;
+     right: 10px;
+     top: 25px;
+     width: 20px;
+     height: 15px;
+     background: url(themesmobile/68ecshopcom_mobile/images/user/up_down.png) no-repeat;
+ }
+<style>
+
+.whightbg{ padding:20px 0 20px; background:#FFF;}
+i.utitle2_down{ background-position:0 0px;}
+i.utitle2_up{ background-position:0 -54px;}
+.bdsharebuttonbox{ text-align:center ; padding-top:15px;}
+.bdsharebuttonbox a{ width:40px; height:50px; display:inline-block; float:none; margin-right:5px; margin-left:5px; background:url(themesmobile/68ecshopcom_mobile/images/user/share.png) no-repeat; background-size:40px auto; }
+.bdsharebuttonbox a.bds_qzone{ background-position:0px 1px;}
+.bdsharebuttonbox a.bds_tsina{ background-position:0px -96px;}
+.bdsharebuttonbox a.bds_renren{  background-position:0px -47px;}
+.bdsharebuttonbox a.bds_tqq{ background-position:0px -144px;}
+.tabletitle td{ background:#f3f3f3; color:#666; height:55px;}
+.even td{ background:#ecf5fd; height:55px; font-size:16px;}
+.odd td{ background:#fcfdeb; height:55px; font-size:16px;}
+td.lever1{ color:#f68916; font-size:30px; font-family:Helvetica;}
+td.lever2{ color:#50c559; font-size:30px; font-family:Helvetica;}
+td.lever3{ color:#f5b710; font-size:30px; font-family:Helvetica;}
+td.lever4{ color:#0e80cb; font-size:30px; font-family:Helvetica;}
+td.lever5{ color:#68a5dd; font-size:30px; font-family:Helvetica;}
+#pager a { background:#FFF; border:1px solid #ddd; padding:5px 10px;}
+#pager{ margin:10px; font-size:14px; text-align:center;}
+.blank{ height:15px; line-height:15px; clear:both;}
+.tuijian{ padding:10px; line-height:28px; color:#999;}
+.tuijian a{ color:#4acfec;}
+.tuijian b{ color:#999; font-weight:normal;}
+.tuijian span{ color:#F60; font-size:18px; font-weight:bold;font-family:Helvetica;}
+</style>
+</style>
+<div class="Funds">
+<h2><span>我的股份</span><em>{$total_gufen}个</em></h2>
+<h3>我的分红：￥{$user_info.credit2}<span style="float:right;display:none">剩余天数：</span></h3>
+<h3 style="display:none">入股时间：{$user_info.gf_num}结束时间：</h3>
+</div>
+
+<div class="Funds_dom">
+<ul>
+<li  class="border_left" style="display:none"><a href="user.php?act=bonus"><i class="ac1"><em>{$user_info.bonus_count}</em></i><span>红包</span></a></li>
+<li><a href="user.php?act=account_deposit1"><i class="ac2"></i><span>股份充值</span></a></li>
+<li  class="border_left" style="display:none"><a href="user.php?act=vc_login"><i class="ac3"></i><span>储值卡充值</span></a></li>
+<li><a href="user.php?act=account_raply1"><i class="ac4"></i><span>分红提现</span></a></li>
+<li  class="border_left"><a href="user.php?act=account_detail1"><i class="ac5"></i><span>股份明细</span></a></li>
+<li><a href="user.php?act=account_log1"><i class="ac6"></i><span>提现/充值记录</span></a></li>
+<li  class="border_left" ><a href="user.php?act=account_detail2"><i class="ac1"><em style="display:none">{$user_info.bonus_count}</em></i><span>股份分红明细</span></a></li>
+<li  class="border_left" style="display:none"><a href="user.php?act=vc_login"><i class="ac3"></i><span>申请退股</span></a></li>
+</ul>
+</div>
+<div class="utitle2">分成说明<i class="utitle2_down"></i></div>
+
+<div class="tui_main"style="display:none" >
+     <p class="tuijian" >{$affiliate_intro}</p>
+     </div>
+     <div class="blank"></div>
+ <script type="text/javascript" language="JavaScript">
+<!--
+{literal}
+function selectPage(sel)
+{
+  sel.form.submit();
+}
+{/literal}
+//-->
+</script>
+<script>
+$('.utitle2').click(function(){
+	if($(this).find("i").hasClass("utitle2_down"))
+	{
+	$(this).next('.tui_main').fadeIn("slow");
+	$(this).find("i").removeClass("utitle2_down");
+	$(this).find("i").addClass("utitle2_up");
+	}
+	else
+	{
+	$(this).next('.tui_main').fadeOut("slow");
+	$(this).find("i").removeClass("utitle2_up");
+	$(this).find("i").addClass("utitle2_down");
+	}
+	})
+</script>
+
+
+
+

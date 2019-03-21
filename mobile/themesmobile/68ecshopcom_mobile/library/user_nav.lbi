@@ -1,0 +1,101 @@
+
+<div class="user_com">
+<!--top-->
+<div class="com_top border_bottm">
+<em>{if $headimgurl neq ''}<img src="{$headimgurl}">{else}<img src="themesmobile/68ecshopcom_mobile/images/user/user68.jpg">{/if}</em>
+<i>{$rank_name}</i>
+<dl>
+<dt><a href="user.php?act=profile">设置</a></dt>
+<dd><span>{if $info.nickname}{$info.nickname}1{else}{$info.username}2{/if}</span></dd>
+</dl>
+<!--
+<ul>
+<li class="bain"><a href="user.php?act=order_list" ><span>{$order_count.all}</span>我的订单</a></li>
+<li class="bain"><a href="user.php?act=collection_list"><span>{$collect_count}</span>我的收藏</a></li>
+<li style=" border:0"><a href="user.php?act=my_comment"><span>{$comment_count}</span>我的评价</a></li>
+</ul>
+-->
+</div>
+<div class="com_top border_bottm">
+<a class="vc_title1">账户余额：<strong>{if $info.user_money}{$info.user_money}{else}0{/if}</strong><span style="padding-right;15%;">元</span></a>
+<a class="vc_title1">账户积分：<strong>{if $info.pay_points}{$info.pay_points}{else}0{/if}</strong><span style="padding-right;15%;">积分</span></a>
+<a class="vc_title1">平台总销量：<strong>{if $total_jifen}{$total_jifen}{else}0{/if}</strong><span style="padding-right;15%;">积分</span></a>
+<a class="vc_title1">我的分红权：<strong>{if $info.fh_num}{$info.fh_num}{else}0{/if}</strong><span style="padding-right;15%;">个</span></a>
+<a class="vc_title1">分红权总数：<strong>{if $info.totalfh_num}{$info.totalfh_num}{else}0{/if}</strong><span style="padding-right;15%;">个</span></a>
+<a class="vc_title1">我的收入：<strong>{if $info.credit}{$info.credit}{else}0{/if}</strong><span style="padding-right;15%;">元</span></a>
+<!--
+<span class="vc_title1"><a href="user.php?act=account_raply">  我要提现  </a></span>
+<span class="vc_title1"><a href="user.php?act=account_deposit">  充值中心  </a></span>
+<span class="vc_title1"><a href="user.php?act=account_detail">  账户明细  </a></span>
+<span class="vc_title1"><a href="user.php?act=account_log">  申请记录  </a></span>-->
+
+</div>
+<div class="Funds_dom">
+<ul>
+
+<li><a href="user.php?act=account_deposit"><i class="ac2"></i><span>余额充值</span></a></li>
+<li><a href="user.php?act=account_raply"><i class="ac4"></i><span>提现</span></a></li>
+<li  class="border_left"><a href="user.php?act=account_detail"><i class="ac5"></i><span>账户明细</span></a></li>
+<li><a href="user.php?act=account_log"><i class="ac6"></i><span>申请记录</span></a></li>
+{if $rank_name}
+<li  class="border_left"><a href="user.php?act=account_detail3"><i class="ac5"></i><span>会员购买明细</span></a></li>
+{else}
+<li><a href="user.php?act=account_deposit2"><i class="ac1"></i><span>VIP会员购买</span></a></li>
+<li  class="border_left"><a href="user.php?act=account_detail3"><i class="ac5"></i><span>会员购买明细</span></a></li>
+{/if}
+</ul>
+</div>
+<!--
+
+<div class="Funds_dom">
+<ul>
+
+<li><a href="user.php?act=account_deposit"><i class="ac2"></i><span>在线充值</span></a></li>
+<li  class="border_left"><a href="user.php?act=bonus"><i class="ac1"><em>{$user_info.bonus_count}</em></i><span>红包</span></a></li>
+<li  class="border_left"><a href="user.php?act=vc_login"><i class="ac3"></i><span>储值卡充值</span></a></li>
+<li><a href="user.php?act=account_raply"><i class="ac4"></i><span>提现</span></a></li>
+<li  class="border_left"><a href="user.php?act=account_detail"><i class="ac5"></i><span>账户明细</span></a></li>
+<li><a href="user.php?act=account_log"><i class="ac6"></i><span>申请记录</span></a></li>
+</ul>
+</div>
+-->
+<!--我的订单-->
+<div class="Order">
+<dl><a href="user.php?act=order_list"><dt><strong>全部订单</strong><span>查看全部订单</span></dt></a></dl>
+<ul>
+<li><a href="user.php?act=order_list&composite_status=100"><em class="ordem2"><i>{$order_count.await_pay}</i></em><span>待付款</span></a></li>
+<li><a href="user.php?act=order_list&composite_status=101"><em class="ordem3"><i>{$order_count.await_ship}</i></em><span>待发货</span></a></li>
+<li><a href="user.php?act=order_list&composite_status=105" ><em class="ordem1"><i>{$order_count.await_receipt}</i></em><span>待收货</span></a></li>
+<li><a href="user.php?act=order_list&composite_status=102"><em class="ordem4"><i>{$order_count.finished}</i></em><span>已完成</span></a></li>
+</ul>
+</div>
+<!--我的钱包
+<div class="Assets">
+<dl><a href="user.php?act=account_manage"><dt><strong>我的资产</strong><span>全部资产/充值</span></dt></a></dl>
+ {insert name='member_info1'}
+</div>-->
+<!--菜单-->
+<div class="Wallet main_top">
+<a href="user.php?act=account_manage1" "><em class="Icon4"></em><dl class="border_bottm"><dt>我的股份</dt><dd>&nbsp;</dd></dl></a>
+<a href="security.php" style="display:none;"><em class="Icon4"></em><dl class="border_bottm"><dt>账户安全</dt><dd>&nbsp;</dd></dl></a>
+<!--微分销菜单-->
+{if $is_distrib eq 1}
+<a href="v_user.php"><em class="Icon8"></em><dl class="border_bottm"><dt>我的分销</dt><dd>查看分销信息</dd></dl></a>
+{/if}
+<a href="user.php?act=code"><em class="Icon7"></em><dl class="border_bottm"><dt>推广二维码</dt><dd>查看二维码</dd></dl></a>
+<a href="user.php?act=my_comment"><em class="Icon1"></em><dl class="border_bottm"><dt>评价/晒单</dt><dd>查看评价/晒单</dd></dl></a>
+<a href="user.php?act=collection_list"><em class="Icon2"></em><dl><dt>我的收藏</dt><dd>商品收藏/店铺收藏</dd></dl></a>
+</div>
+
+
+<div class="Wallet main_top">
+<a href="user.php?act=address_list"><em class="Icon3"></em><dl class="border_bottm"><dt>收货地址</dt><dd>添加/修改</dd></dl></a>
+<a href="user.php?act=affiliate"><em class="Icon4"></em><dl class="border_bottm"><dt>我的推荐</dt><dd>&nbsp;</dd></dl></a>
+<a href="user.php?act=message_list"><em class="Icon5"></em><dl><dt>我的留言</dt><dd>&nbsp;</dd></dl></a>
+</div>
+<div class="Wallet main_top">
+<a href="javascript:void(0)" onClick="window.location.href='user.php?act=logout'" ><em class="Icon6"></em><dl><dt>注销登录</dt></dl></a>
+</div>
+</div>
+
+		

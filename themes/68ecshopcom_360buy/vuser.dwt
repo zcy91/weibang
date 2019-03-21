@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="{$keywords}" />
+<meta name="Description" content="{$description}" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>{$page_title}</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="icon" href="animated_favicon.gif" type="image/gif" />
+<link rel="stylesheet" type="text/css" href="themes/68ecshopcom_360buy/css/user.css" />
+<script type="text/javascript" src="themes/68ecshopcom_360buy/js/jquery-1.9.1.min.js"></script>
+{insert_scripts files='jquery.json.js,transport.js,json2.js'}
+{insert_scripts files='common.js,user.js'}
+</head>
+<body>
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+<div class="margin-w1210 clearfix"> <!-- #BeginLibraryItem "/library/ur_here.lbi" --><!-- #EndLibraryItem -->
+  <div class="user-left"> <!-- #BeginLibraryItem "/library/user_info.lbi" --><!-- #EndLibraryItem --> <!-- #BeginLibraryItem "/library/user_menu.lbi" --><!-- #EndLibraryItem --> </div>
+  <div class="user-right"> 
+  {if $smarty.session.user_id}
+  
+ <iframe style="width:1000px;margin:auto;" frameborder=0 width=1000 height=900px marginheight=0 marginwidth=0 src=http://pcshop.lexiakj.com/mobile/v_user.php></iframe>
+  {else}
+  <iframe style="width:1000px;margin:auto;" frameborder=0 width=1000 height=900px marginheight=0 marginwidth=0 src=http://pcshop.lexiakj.com/mobile/user.php></iframe>
+  
+  {/if}
+  </div>
+</div>
+<div class="pop-mask"></div>
+<div class="site-footer">
+  <div class="footer-related"> <!-- #BeginLibraryItem "/library/help.lbi" --><!-- #EndLibraryItem --> <!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem --> </div>
+</div>
+</body>
+</html>
